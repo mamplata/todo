@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="todo-container">
-        <h1>To-Do List</h1>
-        <input type="text" id="todo-input" placeholder="Add a new task">
-        <button id="add-todo">Add Task</button>
-        <ul id="todo-list"></ul>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">To-Do List</h1>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="todo-input"
+          class="form-control"
+          placeholder="Add a new task"
+          aria-label="Add a new task"
+        />
+        <div class="input-group-append">
+          <button id="add-todo" class="btn btn-primary" type="button">
+            Add Task
+          </button>
+        </div>
+      </div>
+      <ul id="todo-list" class="list-group"></ul>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="app.js"></script>
-</body>
+    <!-- Bootstrap JS (optional for additional functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
